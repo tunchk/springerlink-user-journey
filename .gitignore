@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+### robotframework ###
+log.html
+output.xml
+report.html
+selenium-screenshot-*.png
+
 # C extensions
 *.so
 
