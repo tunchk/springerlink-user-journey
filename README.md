@@ -8,7 +8,7 @@ For all the tasks, all features are delivered using continuous delivery i.e each
 NOTE: Please elaborate on all types of tests that are needed within the team irrespective of whether QA writes them or not.
 
 
-# How to Run the Automation Solution:
+# How to Configure and Run the Automation Solution:
 
 As mentioned above, the solution relies on the robotframework. 
 
