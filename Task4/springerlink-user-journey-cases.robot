@@ -36,6 +36,12 @@ Search Term1 without Term2 Search
     Click on Springer Link Search Button
     Check The Search List Against the operator "NOT" Search
 
+Search Term1 NEAR Term2 Search
+    Open Springer Link
+    Type In The Search Bar for "NEAR" operator 
+    Click on Springer Link Search Button
+    Check The Search List Against the operator "NEAR" Search
+
 
 *** Variables ***
 #The variables are in the keywords file. The above file is to see how would the user behave. The parameters can be datadriven too.

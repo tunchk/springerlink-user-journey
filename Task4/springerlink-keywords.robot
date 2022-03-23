@@ -51,6 +51,16 @@ Check The Search List Against the operator "NOT" Search
     Page Should Contain Element    ${SearchResultListXpath}
     Comment    The Not Operator Search Returned a List!
 
+Type In The Search Bar for "NEAR" operator 
+    Input Text    ${SearchBarXpath}    ${NearOperatorWord}
+
+Check The Search List Against the operator "NEAR" Search
+    Page Should Contain    text  ${NearOperatorWordCheck1}
+    Element Should Contain   ${SearchResultListXpath}    ${NearOperatorWordCheck2}
+    Page Should Contain Element    ${SearchResultListXpath}
+    Comment    The NEAR Operator Search Returned a List!
+    Comment    The Near Operator Search Result contains a result which satisfies the need! "${NearOperatorWordCheck2}"
+
 
 
 *** Variables ***
@@ -66,9 +76,12 @@ ${PhraseMatchWord}    Global Warming
 ${StemSearchWord}    Running
 ${StemSearchWord2}    Run
 ${StemSearchWord3}    Ran
-${OrOperatorWord}    "Wheat" or "Maize"
-${OrOperatorWordCheck1}    "Wheat"
-${OrOperatorWordCheck2}    "Maize"
-${NotOperatorWord}    "Wheat" NOT "Maize"
-${NotOperatorWordCheck1}    "Wheat"
-${NotOperatorWordCheck2}    "Maize"
+${OrOperatorWord}    Wheat or Maize
+${OrOperatorWordCheck1}    Wheat
+${OrOperatorWordCheck2}    Maize
+${NotOperatorWord}    Wheat NOT  Maize
+${NotOperatorWordCheck1}    Wheat
+${NotOperatorWordCheck2}    Maize
+${NearOperatorWord}    Artificial NEAR Intelligence
+${NearOperatorWordCheck1}    Artificial Intelligence
+${NearOperatorWordCheck2}    Understanding the Artificial: On the Future Shape of Artificial Intelligence
