@@ -77,19 +77,43 @@ Check The Search List Against the Wild * Card Search
     Comment    The NEAR Operator Search Returned a List!
     Comment    The Near Operator Search Result contains a result which satisfies the need! "${WildCardWord1} or ${WildCardWord2} or ${WildCardWord3} or ${WildCardWord4}"
 
+### Advanced Search Keywords Begin Below
+
 Open Springer Link Advanced Search
     Open Browser   ${AS-BaseURL}    ${TestBrowser}
 
 Type In The Search Bar for AS- all the words
-    Input Text    ${AS-TextBarXpath}    ${AS-AllTheWords}
-    Press Keys    ${AS-TextBarXpath}    ENTER
+    Input Text    ${AS-AllTheWordsTextBarXpath}    ${AS-AllTheWords}
+    Press Keys    ${AS-AllTheWordsTextBarXpath}    ENTER
 
-Check The Search List for All The words
+Check The Search List for AS- All The words
     Page Should Contain    text    ${AS-AllTheWords}
     Page Should Contain Element    ${SearchResultListXpath}
     Element Should Contain    ${SearchResultListXpath}    ${AS-AllTheWords}
     Comment   List results contain text ${AS-AllTheWords}
 
+Type In The Search Bar for AS- ExactPhrase
+    Input Text    ${AS-ExactPhraseTextBarXpath}    ${AS-ExactPhrase}
+    Press Keys    ${AS-ExactPhraseTextBarXpath}    ENTER
+
+
+Check The Search List for AS- Exact Phrase
+    Page Should Contain    text    ${AS-ExactPhrase}
+    Page Should Contain Element    ${SearchResultListXpath}
+    Element Should Contain    ${SearchResultListXpath}    ${AS-ExactPhrase}
+    Comment   List results contain text ${AS-ExactPhrase}
+
+Type In The Search Bar for AS- Author And Title
+    Input Text    ${AS-TitleXpath}    ${AS-Title}
+    Input Text    ${AS-AuthorXpath}    ${AS-Author}
+    Press Keys    ${AS-AuthorXpath}    ENTER
+
+Check The Search List for AS- Title and Author
+    Page Should Contain    text    ${AS-Title}
+    Page Should Contain    text    ${AS-Author}
+    Page Should Contain Element    ${SearchResultListXpath}
+    Element Should Contain    ${SearchResultListXpath}    ${AS-Title}
+    Comment   List results contain text ${AS-Title} and ${AS-Author}
 
 *** Variables ***
 
@@ -124,7 +148,11 @@ ${WildCardWord*4}    Prospects
 ### AS stands for Advanced Search
 ${AS-BaseURL}    https://link.springer.com/advanced-search
 ${AS-SearchButtonXpath}    css:#submit-advanced-search
-${AS-TextBarXpath}    //*[@id="all-words"]
+${AS-AllTheWordsTextBarXpath}    xpath://*[@id="all-words"]
+${AS-ExactPhraseTextBarXpath}    xpath://*[@id="exact-phrase"]
+${AS-TitleXpath}    xpath://*[@id="title-is"]
+${AS-AuthorXpath}    xpath://*[@id="author-is"]
 ${AS-AllTheWords}   intermittent fasting
-
-
+${AS-ExactPhrase}   Global Warming
+${AS-Author}     Nina Szogs
+${AS-Title}    Galatasaray
