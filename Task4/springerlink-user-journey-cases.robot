@@ -8,14 +8,12 @@ Suite Setup    Run Keywords    Open Springer Link    Check The Image    Check Th
 Suite Teardown    Close All Browsers
 
 *** Test Cases ***
-# All verification of the search results are performed in Click steps
 
 Empty Search User Journey
     Open Springer Link
     Click on Springer Link Search Button
     Run Check Points for EmptySearch
     
-
 Phrase Match Search
     Open Springer Link
     Type In The Search Bar PhraseMatchWord Parameter
@@ -44,13 +42,14 @@ Search Term1 NEAR Term2 Search
     Open Springer Link
     Type In The Search Bar for "NEAR" operator 
     Click on Springer Link Search Button
+    Check The Search List Against the operator "NEAR" Search
 
-Wildcard Search
+Wildcard * Search
     Open Springer Link
-    Type In The Search Bar for Wild Card Search 
+    Type In The Search Bar for Wild * Card Search
     Click on Springer Link Search Button
+    Check The Search List Against the Wild * Card Search
     
-
 
 *** Variables ***
 #The variables are in the keywords file. The above file is to see how would the user behave. The parameters can be datadriven too.

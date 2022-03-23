@@ -64,12 +64,15 @@ Check The Search List Against the operator "NEAR" Search
     Comment    The NEAR Operator Search Returned a List!
     Comment    The Near Operator Search Result contains a result which satisfies the need! "${NearOperatorWordCheck2}"
 
-Type In The Search Bar for Wild Card Search
+Type In The Search Bar for Wild * Card Search
     Input Text    ${SearchBarXpath}    ${WildCardWord}
 
-Check The Search List Against the Wild Card Search
+Check The Search List Against the Wild * Card Search
     Page Should Contain    text  ${WildCardWord}
-    Element Should Contain   ${SearchResultListXpath}    ${WildCardWord1} or ${WildCardWord2} or ${WildCardWord3} or ${WildCardWord4} 
+    Element Should Contain   ${SearchResultListXpath}    ${WildCardWord1}
+    Element Should Contain   ${SearchResultListXpath}    ${WildCardWord2}
+    Element Should Contain   ${SearchResultListXpath}    ${WildCardWord3}
+    Element Should Contain   ${SearchResultListXpath}    ${WildCardWord4} 
     Page Should Contain Element    ${SearchResultListXpath}
     Comment    The NEAR Operator Search Returned a List!
     Comment    The Near Operator Search Result contains a result which satisfies the need! "${WildCardWord1} or ${WildCardWord2} or ${WildCardWord3} or ${WildCardWord4}"
@@ -99,8 +102,8 @@ ${NotOperatorWordCheck2}    Maize
 ${NearOperatorWord}    Artificial NEAR Intelligence
 ${NearOperatorWordCheck1}    Artificial Intelligence
 ${NearOperatorWordCheck2}    Understanding the Artificial: On the Future Shape of Artificial Intelligence
-${WildCardWord}    Hea*
-${WildCardWord1}    Heap
-${WildCardWord2}    Heat
-${WildCardWord3}    Head
-${WildCardWord4}    Heating
+${WildCardWord}    Pro*
+${WildCardWord1}    Problem
+${WildCardWord2}    Progress
+${WildCardWord3}    Probability
+${WildCardWord4}    Prospects
