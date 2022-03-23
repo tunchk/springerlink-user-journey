@@ -50,6 +50,10 @@ Wildcard * Search
     Click on Springer Link Search Button
     Check The Search List Against the Wild * Card Search
     
+# Check The Search List Against the Wild ? Card Search
+# I did not wrote this test since the product is not returning correct list currently
+# Besides it is similar to * wildsearch I will just change the parameters
+
 
 *** Variables ***
 #The variables are in the keywords file. The above file is to see how would the user behave. The parameters can be datadriven too.

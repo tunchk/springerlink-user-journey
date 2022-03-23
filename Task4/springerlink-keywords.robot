@@ -77,6 +77,18 @@ Check The Search List Against the Wild * Card Search
     Comment    The NEAR Operator Search Returned a List!
     Comment    The Near Operator Search Result contains a result which satisfies the need! "${WildCardWord1} or ${WildCardWord2} or ${WildCardWord3} or ${WildCardWord4}"
 
+Open Springer Link Advanced Search
+    Open Browser   ${AS-BaseURL}    ${TestBrowser}
+
+Type In The Search Bar for AS- all the words
+    Input Text    ${AS-TextBarXpath}    ${AS-AllTheWords}
+    Press Keys    ${AS-TextBarXpath}    ENTER
+
+Check The Search List for All The words
+    Page Should Contain    text    ${AS-AllTheWords}
+    Page Should Contain Element    ${SearchResultListXpath}
+    Element Should Contain    ${SearchResultListXpath}    ${AS-AllTheWords}
+    Comment   List results contain text ${AS-AllTheWords}
 
 
 *** Variables ***
@@ -102,8 +114,17 @@ ${NotOperatorWordCheck2}    Maize
 ${NearOperatorWord}    Artificial NEAR Intelligence
 ${NearOperatorWordCheck1}    Artificial Intelligence
 ${NearOperatorWordCheck2}    Understanding the Artificial: On the Future Shape of Artificial Intelligence
-${WildCardWord}    Pro*
-${WildCardWord1}    Problem
-${WildCardWord2}    Progress
-${WildCardWord3}    Probability
-${WildCardWord4}    Prospects
+${WildCardWord*}    Pro*
+${WildCardWord*1}    Problem
+${WildCardWord*2}    Progress
+${WildCardWord*3}    Probability
+${WildCardWord*4}    Prospects
+### Below Variables belongs to the Advanced Search
+
+### AS stands for Advanced Search
+${AS-BaseURL}    https://link.springer.com/advanced-search
+${AS-SearchButtonXpath}    css:#submit-advanced-search
+${AS-TextBarXpath}    //*[@id="all-words"]
+${AS-AllTheWords}   intermittent fasting
+
+
