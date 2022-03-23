@@ -4,7 +4,11 @@ Library  SeleniumLibrary
 
 Resource  springerlink-keywords.robot
 
+Suite Setup    Run Keywords    Open Springer Link    Check The Image    Check The Availability of Search Bar
+Suite Teardown    Close All Browsers
+
 *** Test Cases ***
+# All verification of the search results are performed in Click steps
 
 Empty Search User Journey
     Open Springer Link
@@ -40,7 +44,12 @@ Search Term1 NEAR Term2 Search
     Open Springer Link
     Type In The Search Bar for "NEAR" operator 
     Click on Springer Link Search Button
-    Check The Search List Against the operator "NEAR" Search
+
+Wildcard Search
+    Open Springer Link
+    Type In The Search Bar for Wild Card Search 
+    Click on Springer Link Search Button
+    
 
 
 *** Variables ***
