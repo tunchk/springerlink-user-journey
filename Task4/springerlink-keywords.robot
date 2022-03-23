@@ -5,41 +5,70 @@ Library    Telnet
 
 *** Keywords ***
 Open Springer Link
-    Open Browser   https://link.springer.com/    headlesschrome
+    Open Browser   ${BaseUrlOfSystemUnderTest}    ${TestBrowser}
 
 Check The Availability of Search Bar
-    Element Should Be Visible   xpath://*[@id="query"]
+    Element Should Be Visible   ${SearchBarXpath}
 
 Click on Springer Link Search Button
-    Click Button    xpath://*[@id="search"]
+    Click Button    ${SearchBarButtonXpath}
 
 Run Check Points for EmptySearch
     Page Should Contain    ${ButtonText}
     Page Should Contain    ${FilterHeader}
 
 Type In The Search Bar PhraseMatchWord Parameter
-    Input Text    xpath://*[@id="query"]    ${PhraseMatchWord}
+    Input Text    ${SearchBarXpath}    ${PhraseMatchWord}
 
 Check The Search List Against The Phrase Match
     Page Should Contain  text  ${PhraseMatchWord}
-    Page Should Contain Element    xpath://*[@id="results-list"]
+    Page Should Contain Element    ${SearchResultListXpath}
     Comment    The Phrase Match Search Returned a List!
 
 Type In The Search Bar for Stem 
-    Input Text    xpath://*[@id="query"]    ${StemSearchWord}
+    Input Text    ${SearchBarXpath}    ${StemSearchWord}
 
 Check The Search List Against The Stem Search
     Page Should Contain  text  ${StemSearchWord}
     Page Should Contain  text  ${StemSearchWord2}
     Page Should Contain  text  ${StemSearchWord3}
-    Page Should Contain Element    xpath://*[@id="results-list"]
+    Page Should Contain Element    ${SearchResultListXpath}
     Comment    The Stem Search Returned a List!
+
+Type In The Search Bar for "OR" operator
+    Input Text    ${SearchBarXpath}    ${OrOperatorWord}
+
+Check The Search List Against the operator "OR" Search
+    Page Should Contain  text  ${OrOperatorWordCheck1} and ${OrOperatorWordCheck2}
+    Page Should Contain Element    ${SearchResultListXpath}
+
+Type In The Search Bar for "NOT" operator 
+    Input Text    ${SearchBarXpath}    ${NotOperatorWord}
+
+Check The Search List Against the operator "NOT" Search
+    Page Should Contain  text  ${NotOperatorWordCheck1}
+    Element Should Not Contain    ${SearchResultListXpath}    text  ${NotOperatorWordCheck2}
+    Page Should Contain Element    ${SearchResultListXpath}
+    Comment    The Not Operator Search Returned a List!
+
+
 
 *** Variables ***
 
+${TestBrowser}    headlesschrome
+${BaseUrlOfSystemUnderTest}    https://link.springer.com/
+${SearchBarXpath}    xpath://*[@id="query"]
+${SearchBarButtonXpath}    xpath://*[@id="search"]
+${SearchResultListXpath}    xpath://*[@id="results-list"]
 ${ButtonText}    New Search
 ${FilterHeader}     Refine Your Search
 ${PhraseMatchWord}    Global Warming
 ${StemSearchWord}    Running
 ${StemSearchWord2}    Run
 ${StemSearchWord3}    Ran
+${OrOperatorWord}    "Wheat" or "Maize"
+${OrOperatorWordCheck1}    "Wheat"
+${OrOperatorWordCheck2}    "Maize"
+${NotOperatorWord}    "Wheat" NOT "Maize"
+${NotOperatorWordCheck1}    "Wheat"
+${NotOperatorWordCheck2}    "Maize"
