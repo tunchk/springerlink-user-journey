@@ -2,8 +2,22 @@ Task1
 
 What would be your strategy for non-functionals (cross-functionals) testing?
 
+When it comes to selection or making a decision on what to test, how? To me it is always all about risk management.<br/>
+In regards of the two testing principles:<br/>
+
+- Exhaustive tesing is not possible <br/>
+- Testing is context dependent <br/>
+
+It is easy to mention that there can not be an easy one standard solution against the testing.<br/>
+Therefore, I usually try to create a risk analysis, before deciding how to proceed with what to implement.<br/>
+
+Hence, without having some answers, I will try to set a strategy by following some educated guesses.<br/>
+
+
 1. List the types of non-functional tests you would perform for the
 application above and how you would prioritise them?
+
+
 
 2. List the tools you would use.
 
