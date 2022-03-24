@@ -67,6 +67,36 @@ operation better, for increasing the profitibility of a product?"
 
 2. List the tools you would use.
 
+    -- Compatibility Testing: 
+    Implementing test automation with some kind of tool " Browser Stack"
+    
+    -- Usability Testing: 
+    We would use our own resources by designing a journey and feedback collection. However, if I 
+    neead to mention a tool name, Applause or Maze can be followed. Although, my opinion is, it is better to invite people
+    for a testing session.
+    
+    -- Performance Testing:
+    It would differ regarding the tech stack or the engineering strategy. However, I personaly like to use gatling. However, 
+    developers mostly like Jmeter. Back in my past, with one of my customers, we used the blazemeter and loadium very efficiently.
+    
+    -- Reliability Testing
+    There is a need of combination. First, it is necessary to identify the journeys with product managers. After that, it is
+    necessary to identify tech metrics. After that with QA engineers or developers; it is necessary to develop the scripts of load testing.
+    Lastly, it is important to monitor the action against the metrics which was decided by the team. 
+    For the monitoring part, there is a need of an APM tool. It can be dynatrace, appdynamics, or newrelic.
+    
+    -- Security Testing
+    I would go for the OWASP 10. There are automated tools or services by HP that we used back in Turkey, however, this matter
+    is not something that you can leave to a tool. The culture must change, and every team should be aware of the 10 rules. 
+    They need to set a Definition of Done in their team, where it says; done means Security topics are done too.
+
+    --  Reusability & Flexibility & Portability + Maintainability
+    I would go for a static code analysis tool. SonarQube or codacy. Anything would do; because all the issue is about tracking 
+    the code quality. If the source code is healthy, all the topics above would be easy to manage. 
+    The source code health is a huge responsibility. Because, if it is not well behaved, sooner or later; you will face the 
+    usual phrase of "Let's build v2"
+    Every problem starts from the source code first. The procrastination over the source code problems will lead the company to
+    a v2 build process.  
 
 3. Explain where you would fit these tests in a continuous delivery
 model where things go straight into production.
