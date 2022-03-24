@@ -101,5 +101,29 @@ operation better, for increasing the profitibility of a product?"
 3. Explain where you would fit these tests in a continuous delivery
 model where things go straight into production.
 
+    -- Reusability & Scalability & Flexibility & Portability
+    Constantly monitoring.
+    
+    -- Compatibility Testing:
+    By the end of every feature testing.
+    
+    -- Usability Testing:
+    By the end of every feature testing. 
+    By the feedback of the customers and complaints.
+    
+    -- Performance Testing & Reliability Testing::
+    By monitoring the production data.
+    By every feature.
+
+    -- Security Testing
+    Constantly, during every release.
+    Periodic checks.
+
 4. How would you present this back to the team(stakeholders) - to
 get maximum buy in?
+
+In my opinion, I should not try to buy in anything. However, as a team, we should try to fit the needs in an
+economic scale. The market pressure and the customer needs is something, reasonably, highly prioritised. Therefore, ofcourse, 
+the product team would tend to prioritise the customer needs; by the power of data. It is possible to convince nearly
+every peer. As I mentioned above, by relying on the risk basis, and collecting the related data; it is possible to show and tell 
+the necessity of investment in to the the current infrastructure to the stakeholders.   
