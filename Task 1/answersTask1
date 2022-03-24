@@ -2,24 +2,71 @@ Task1
 
 What would be your strategy for non-functionals (cross-functionals) testing?
 
-When it comes to selection or making a decision on what to test, how? To me it is always all about risk management.<br/>
-In regards of the two testing principles:<br/>
+When it comes to selection or making a decision on what to test, how? To me it is always all about risk management.
+In regards of the two testing principles:
 
-- Exhaustive tesing is not possible <br/>
-- Testing is context dependent <br/>
+- Exhaustive tesing is not possible 
+- Testing is context dependent 
 
-It is easy to mention that there can not be an easy one standard solution against the testing.<br/>
-Therefore, I usually try to create a risk analysis, before deciding how to proceed with what to implement.<br/>
+It is easy to mention that there can not be an easy one standard solution against the testing.
+Therefore, I usually try to create a risk analysis, before deciding how to proceed with what to implement.
 
-Hence, without having some answers, I will try to set a strategy by following some educated guesses.<br/>
+Hence, without having some answers, I will try to set a strategy by following some educated guesses.
 
 
 1. List the types of non-functional tests you would perform for the
 application above and how you would prioritise them?
 
+-- Springer Link is a product where it has the entities: 
+    -- A back-end api for content management
+    -- A google cloud bucket
+    -- A directory manager
+    -- A format manager
+
+Besides, it runs through:
+    -- Browsers on PC's 
+    -- Browsers on mobile devices
+    -- Different subscription types
+    -- In two different languages
+
+In addition, the squads serves the software through;
+    -- A CI/CD pipeline
+        Where:
+        -- Functional risks are tested automatically
+
+Now it is time to make the educated guesses. Among 20+ Non-Functional Testing, in the risk perspective, I would first focus on the
+end-customer focused types such as:
+
+    -- Compatibility Testing
+    -- Usability Testing
+    -- Performance Testing
+    -- Reliability Testing
+    -- Security Testing
+
+In other words, I would be, firstly, focusing on the variables, Availability, Reliability, Interoperability, Usability, and Security.
+The main reason for focusing the aspects above is related about being customer centric. The unknown priorities might change the situation.
+
+In my opinion the software quality has three aspects. Functional quality, Infrastructural Quality, and Process Quality.
+
+Mainly focusing on the product's functionality.
+Efficiency, Durability, Scalability, and Performance of a delivery pipeline and software environment.
+Efficiency of a software development teams' SDLC.
+
+Hence, secondly, putting aside whole functionality, I would go for:
+
+    -- Reusability
+    -- Scalability
+    -- Flexibility & Portability
+
+As a summary, first, I would go for the solutions which will enhance customers experience. After that, I would go for efficiency
+and Reusability of the system. The main reason for that is, relying on the customer feedback, it would be easier to make an
+educated guess over the question "How to Continue for Building new features?" or "Is it time to invest on how to automate the 
+operation better, for increasing the profitibility of a product?"
+
 
 
 2. List the tools you would use.
+
 
 3. Explain where you would fit these tests in a continuous delivery
 model where things go straight into production.
