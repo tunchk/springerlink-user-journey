@@ -1,7 +1,56 @@
 What would be your strategy to test and monitor this application in production?
 
+As I mentioned in the first question, I like to divide and manage software quality in three main aspects.
+    1- Funtional quality
+    2- Infrastructural quality
+    3- Process quality
+Therefore, I would monitor the metrics in regards of this point of view. However, there is an additional important
+peer for monitoring the application. The product management people, their input is more than important because; they
+now needs of business and customers. So, if a squad wants to improve the quality of the product; it is a essential to 
+have information about KPI's. Otherwise, it would not be possible to scale it economicaly. As a summary, to monitor 
+the performance of the squads, the software, and the infrastructure; it is vital to have KPI's and create a road map
+over those goals. Else, it would be an endless game which would be impossible to achieve the goal.
+
 1. How would you make sure that functionality developed is ready to
 be monitored in production?
+
+In my teams, I usually start with creating an SDLC where the process learns progressively. Nowadays, most of the
+squads follow the agile scrum methodology, however they are not following the learning part of it. Mostly, squads are 
+not implementing the learning part of the agile methodologies which actually the most important part of it. 
+Therefore, by summing up the data of previous bugs, or age of bugs, or recurring bugs; I convince the team to insert
+control points which are learnt from the mistakes. Right after the intial meetings, I introduce the concept of
+DoR (Defintion of Ready) and DoD (Definition of Done). To create those concepts team meets togather and discuss 
+the definition of the terms for their team.
+
+To see in a flow please open the diagram ProgressiveProcess
+
+Basically what a team should do is:
+    - Pre-refine the task with the solution designer, QA and Product Manager (Like a 3 Amigos session)
+        - Define the test cases
+        - Define what test cases to automate in which level of testing (Integration, System, UAT)
+        - Define performance metrics if necessary
+        - Identify how to monitor it in the production
+    - Refinement
+        - Create the development tasks
+        - Create the testing and automation tasks
+            - Unit testing
+            - Test automation needs, system and integration level
+            - Performance Testing needs
+            - Security testing needs
+            - And whatever needs added in DoD may be inserted to the List
+    - Development Phase
+        - Including testing 
+    - Delivery of the product (The squad is done here)
+    - Research Phase (The aim is finding feedback for process enhancement so that by the feedback it would be possible to 
+    enhance the software development process to prevent possible future mistakes)
+        - Trying to run experiments to break the product
+            - The main goal is creating or identifying new test cases
+    - Production feedback collection (The aim is enhancing the product, Value Enhancement)
+        - By analyzing APM tools 
+        - By contacting customers
+        - By usability testing results
+
+
 
 2. List the tools you would use for monitoring/testing
 
