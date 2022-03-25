@@ -43,10 +43,13 @@ Execution:<br/>
 * After cloning the repo, please go to the directory Task 4
 * then in the command line type:
 
+Run the below command for the simple search cases:
 ```
-robot springerlink-user-journey-cases.robot<br/>
-robot springerlink-user-journey-cases-advanced-search.robot<br/>
-
+robot springerlink-user-journey-cases.robot
+```
+Run the below command for the advanced search:
+```
+webdrivermanager firefox chrome --linkpath /usr/local/bin<br/>
 ```
 
 After the execution the commandline should return the report directory. It would be easy to review the details.
