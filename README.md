@@ -14,18 +14,32 @@ As mentioned above, the solution relies on the robotframework.<br/>
 
 Therefore, please, first setup/install the list below:<br/>
 
+```
 python3: brew install python3<br/>
+```
+```
 pip: brew install pip<br/>
+```
+```
 Robot Framework: pip install robotframework<br/>
+```
+```
 SeleniumLibrary (For RobotFramework): pip install --upgrade robotframework- seleniumlibrary<br/>
+```
+```
 WebDriverManager (For RobotFramework): pip install webdrivermanager<br/>
     to configure the desired browser, please insert the command: webdrivermanager firefox chrome --linkpath /usr/local/bin<br/>
+```
 
 Execution:<br/>
-After cloning the repo, please go to the directory Task 4<br/>
-then in the command line type:<br/>
+* After cloning the repo, please go to the directory Task 4<br/>
+* then in the command line type:<br/>
+
+```
 robot springerlink-user-journey-cases.robot<br/>
 robot springerlink-user-journey-cases-advanced-search.robot<br/>
+
+```
 
 After the execution the commandline should return the report directory. It would be easy to review the details.
 
