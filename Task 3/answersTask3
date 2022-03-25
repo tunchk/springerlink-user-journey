@@ -1,16 +1,24 @@
 What kind of tests do you need for the article ingesting functionality to go live:
 1. List the levels of tests that are required for the functionality
 to go live.
-    -- Unit Testing:
-    -- Integration Level- API:
-    -- System Tests- E2E testing:
-    -- UAT:
+    -- Unit Testing
+    -- Integration Level- API
+    -- System Tests- E2E testing
+    -- Performance Testing (Although this is a non-functional testing, it is vital. Becuase, if someone cannot login 
+    due to the servers performance, the customer wouldn't be able to use the functionality)
+    -- Regression (Coverage should be decided by the risk basis)
+    If there is a new feature going live:
+    -- UAT
+    -- Compatibility
+
 2. When/where/how frequently these tests run?
     -- Unit Testing
     -- Integration Level- API
     For the testing above, I would test with every trigger of CI/CD pipeline. 
+
     -- System Tests- E2E testing
     For the testing above, I would run it in every new release
+    
     -- UAT
     For the every new feature release
 
