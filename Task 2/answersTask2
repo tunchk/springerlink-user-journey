@@ -1,0 +1,12 @@
+What would be your strategy to test and monitor this application in production?
+
+1. How would you make sure that functionality developed is ready to
+be monitored in production?
+
+2. List the tools you would use for monitoring/testing
+
+3. Explain where you would fit these tests in a continuous delivery
+model where things go straight into production.
+
+4. How would you present this back to the team(stakeholders) - to
+get maximum buy in?
