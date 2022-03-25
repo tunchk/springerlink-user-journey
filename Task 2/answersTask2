@@ -1,7 +1,7 @@
 What would be your strategy to test and monitor this application in production?
 
 As I mentioned in the first question, I like to divide and manage software quality in three main aspects.
-    1- Funtional quality
+    1- Functional quality
     2- Infrastructural quality
     3- Process quality
 Therefore, I would monitor the metrics in regards of this point of view. However, there is an additional important
@@ -10,6 +10,26 @@ now needs of business and customers. So, if a squad wants to improve the quality
 have information about KPI's. Otherwise, it would not be possible to scale it economicaly. As a summary, to monitor 
 the performance of the squads, the software, and the infrastructure; it is vital to have KPI's and create a road map
 over those goals. Else, it would be an endless game which would be impossible to achieve the goal.
+
+On the functional level, I would rely on strong self-learning processes. If the team has a test strategy against the 
+known potential risks; with the help of a progressive process, functionality would be something not to worry about
+anymore. 
+
+On the Infrastructural level, I would be monitoring the metrics in regards of company's KPI's:
+    -- Reusability
+    -- Scalability
+    -- Flexibility & Portability 
+    -- Mutation Testing
+
+On the process quality I would be monitoring the results for:
+    -- Mean time between bugs
+    -- Re-occuring bugs
+    -- Mean time between fixes
+    -- Trend in Burn down chart 
+    -- Retro Meetings' outcomes and delivery of the outcomes
+    -- Trend in new bug creation numbers
+    -- Trend in Source code metrics 
+    -- And other KPI's of the company or Squad.
 
 1. How would you make sure that functionality developed is ready to
 be monitored in production?
@@ -54,8 +74,30 @@ Basically what a team should do is:
 
 2. List the tools you would use for monitoring/testing
 
+Creating and following tasks would rely on Jira or any board application
+For testing documentation, I personally like Test Rail but anything will work even excel.
+For the automation, I personally like python. However any java junit5 solution will work with the Allure reports.
+For monitoring the performance of infrastructure it is good to stick with SonarQube and any APM tools
+For the process quality, I would mostly stick with the Jira. In addition, APM reports, and Test tracking tool reports
+are essential too. 
+
+If there is budget, I would create a single page dashboard per squad; and a single board for company-wise
+
 3. Explain where you would fit these tests in a continuous delivery
 model where things go straight into production.
+
+-- Pre Analysis:
+    Whenever a solution is ready, it is possible to start rightaway.
+-- Unit tests:
+    During every new release, in build time.
+-- API Level automation:
+    During every new release, in build time.
+-- E2E automation:
+    During every new release, after deployment.
+-- UAT
+    After every new feature, after the squad delivery
+-- Research
+    A continuos event. Regardless of release cycle.
 
 4. How would you present this back to the team(stakeholders) - to
 get maximum buy in?
