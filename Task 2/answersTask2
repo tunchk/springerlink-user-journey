@@ -13,7 +13,8 @@ over those goals. Else, it would be an endless game which would be impossible to
 
 On the functional level, I would rely on strong self-learning processes. If the team has a test strategy against the 
 known potential risks; with the help of a progressive process, functionality would be something not to worry about
-anymore. 
+anymore. In addition, it is possible to follow any BDD or ATDD framework, which can enable automations of the user jouneys.
+
 
 On the Infrastructural level, I would be monitoring the metrics in regards of company's KPI's:
     -- Reusability
@@ -25,11 +26,10 @@ On the process quality I would be monitoring the results for:
     -- Mean time between bugs
     -- Re-occuring bugs
     -- Mean time between fixes
-    -- Trend in Burn down chart 
-    -- Retro Meetings' outcomes and delivery of the outcomes
     -- Trend in new bug creation numbers
-    -- Trend in Source code metrics 
-    -- And other KPI's of the company or Squad.
+    
+Additionaly, for the testing part it might be helpful to start the Chaos Engineering practices. It would provide 
+essential feedback for re-factoring the project.
 
 1. How would you make sure that functionality developed is ready to
 be monitored in production?
