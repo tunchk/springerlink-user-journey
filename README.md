@@ -14,26 +14,34 @@ As mentioned above, the solution relies on the robotframework.<br/>
 
 Therefore, please, first setup/install the list below:<br/>
 
+For Python:
 ```
-python3: brew install python3<br/>
+brew install python3
 ```
+for pip:
 ```
-pip: brew install pip<br/>
+brew install pip
 ```
+For the robotframework:
 ```
-Robot Framework: pip install robotframework<br/>
+pip3 install robotframework
 ```
+SeleniumLibrary (For RobotFramework):
 ```
-SeleniumLibrary (For RobotFramework): pip install --upgrade robotframework- seleniumlibrary<br/>
+pip3 install --upgrade robotframework- seleniumlibrary<br/>
 ```
+WebDriverManager (For RobotFramework): 
 ```
-WebDriverManager (For RobotFramework): pip install webdrivermanager<br/>
-    to configure the desired browser, please insert the command: webdrivermanager firefox chrome --linkpath /usr/local/bin<br/>
+pip3 install webdrivermanager
 ```
+to configure the desired browser, please insert the command:
 
+```
+webdrivermanager firefox chrome --linkpath /usr/local/bin<br/>
+```
 Execution:<br/>
-* After cloning the repo, please go to the directory Task 4<br/>
-* then in the command line type:<br/>
+* After cloning the repo, please go to the directory Task 4
+* then in the command line type:
 
 ```
 robot springerlink-user-journey-cases.robot<br/>
