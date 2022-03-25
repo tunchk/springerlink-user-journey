@@ -1,0 +1,55 @@
+What kind of tests do you need for the article ingesting functionality to go live:
+1. List the levels of tests that are required for the functionality
+to go live.
+    -- Unit Testing:
+    -- Integration Level- API:
+    -- System Tests- E2E testing:
+    -- UAT:
+2. When/where/how frequently these tests run?
+    -- Unit Testing
+    -- Integration Level- API
+    For the testing above, I would test with every trigger of CI/CD pipeline. 
+    -- System Tests- E2E testing
+    For the testing above, I would run it in every new release
+    -- UAT
+    For the every new feature release
+
+3. When/where/how does manual testing fit in?
+    
+    In fact, I believe manual testing is a misleading term. I mean, if you analyze the question what "a test is?" 
+    it would come up as:
+
+        "a way of discovering, by questions or practical activities, what someone knows, or what someone or something can do"
+        source:"https://dictionary.cambridge.org/de/worterbuch/englisch/test"
+        or
+        "a medical examination of part of your body in order to find out how healthy it is or what is happening with it"
+
+    In other words, first you need to identify what to Test!
+    Afterwards, how to test it.
+    Then, how to automate it.
+
+    Therefore, the manual effort, should be necessary for identifying or researching of what to test? or how to 
+    identify the risks of the system under test.
+
+    After the identification of the process, the tests will be executed by human effort, until the engineering team
+    decides how to automate the human effort.
+    
+    So the short answer is:
+    -- The tests that are not automated.
+    -- The research for identifying new tests or risks.
+
+
+4. How would you ensure that the above testing strategy is a team
+goal?
+    --
+5. How would you make sure of the quality of the product with the
+lack of a staging/preprod environment?
+Although having lots of staging environments within my current company, the environment is still an essential problem.
+The main reason for that is high demand in environments. However, it is possible to overcome. There are two main solutions.
+Firstly, there is a need of optimization in the system level testing automation. The higher the system level testing
+test cases increases the faster the test will become. Therefore, a well designed automation solution
+would rely on optimization between test levels. In summary, decreasing the amount of system level tests, would increase
+the pace of the test automation solution. Hence, the demand of environment will decrease. 
+Secondly, we have delivered a solution around the minikube tool which enables engineers to build their own local sandbox 
+environment. A complete replica of a staging environment which is running on the engineers local.
+By delivering these two actions, nowadays, we are avoiding the complaints.
