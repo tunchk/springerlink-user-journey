@@ -1,0 +1,9 @@
+Why Robot Framework:
+
+First, when I read the document, while designing the solution; I understood that the question was mentioning user journey
+not the system level e2e testing. 
+Then when I saw the question about the environments. I thought, the user journey refers to UAT instead of functionality.
+In summary, the current test execution regarding functionality is getting done in the lower levels of testing. 
+Therefore, I thought this automation should rely more on the behavior driven development.
+Hence. I selected robotframework, which is a robust tool on ATDD and BDD. Plus, it supports keyword driven, and data 
+driven testing. The solution runs in springer links production environment.

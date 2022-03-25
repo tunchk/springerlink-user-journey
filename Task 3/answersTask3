@@ -49,7 +49,41 @@ to go live.
 
 4. How would you ensure that the above testing strategy is a team
 goal?
-    --
+    -- In my opinion,it is possible with two ways. 
+
+    -- Telling what is "The Good" for the squad?
+    As I mentioned in the previous quesitons, an endless game is not possible to come out with a win. To beat
+    a game, you need an ending. Otherwise, people will just quit as they will see no ending. Sooner or later they
+    will quit. Preventing this quit is about border lining the game. Setting rules and goals. To be able to set the
+    metrics, rules, or goals; the engineering team should now where the ship is headed. Clear understanding of the 
+    company mission and vision. They need to set sprint goals accordingly. Else, the team is just coding what is 
+    written, thus the team misses better solution oppurtunities. What I did in my current job was exactly this. I 
+    created communication between business and product management, we set a goal togather; we told it to the squad. 
+    We delivered a progressive process of product delivery.
+    The engineering manager of the squad is responsible for the source code and impedement removal.
+    Today, they are setting up rituals like infra stability meeting, solution design break up meeting so on and so
+    forth.
+
+    -- Finding the current maturity level of quality and setting KPI's for enhnacement:
+
+    After the goals, borderlines are set. Just decide on squad KPI's. Then the team will come with monitoring and 
+    metrics dashboard.
+    Currently in my team:
+    Engineering manager is following the metrics:
+    Source code metrics
+    Maintainability
+    Availability
+    The QA's are focused on:
+    Bug metrics
+    Automation coverage and optimization
+    Dev's:
+    Unit testing
+    Health of unit testing 
+    Mocking relevant 3rd parties
+    Reliability
+    After all, every peer trakcs and presents their responsiblity against the KPI's.
+
+
 5. How would you make sure of the quality of the product with the
 lack of a staging/preprod environment?
 Although having lots of staging environments within my current company, the environment is still an essential problem.
