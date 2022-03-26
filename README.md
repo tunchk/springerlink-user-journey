@@ -49,7 +49,7 @@ robot springerlink-user-journey-cases.robot
 ```
 Run the below command for the advanced search:
 ```
-webdrivermanager firefox chrome --linkpath /usr/local/bin<br/>
+robot springerlink-user-journey-advanced-search.robot
 ```
 
 After the execution the commandline should return the report directory. It would be easy to review the details.
