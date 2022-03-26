@@ -28,7 +28,7 @@ pip3 install robotframework
 ```
 SeleniumLibrary (For RobotFramework):
 ```
-pip3 install --upgrade robotframework- seleniumlibrary<br/>
+pip3 install --upgrade robotframework- seleniumlibrary
 ```
 WebDriverManager (For RobotFramework): 
 ```
@@ -37,7 +37,7 @@ pip3 install webdrivermanager
 to configure the desired browser, please insert the command:
 
 ```
-webdrivermanager firefox chrome --linkpath /usr/local/bin<br/>
+webdrivermanager firefox chrome --linkpath /usr/local/bin
 ```
 Execution:<br/>
 * After cloning the repo, please go to the directory Task 4
